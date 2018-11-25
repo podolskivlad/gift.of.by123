@@ -1,0 +1,228 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=cyrillic');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.bold {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.header-1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+    margin-top: 5rem;
+}
+
+.header-2 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.header-3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.button-wrapper {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.up-block {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.image-filter-80 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.fa-tree {
+    line-height: 70px;
+    margin-right: 10px;
+}
+
+.page-image {
+    background-image: url('./img//XM7yufD7xZA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.up-header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    padding: 12px 30px;
+    background: #6DB819;
+    border: 2px solid #6DB819;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.button-s {
+    padding: 8px 15px;
+}
+
+.button:hover {
+    background: transparent;
+    border-color: #6DB819 !important;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.second-section {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+}
+
+.third-section {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.section-header {
+    font-size: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.section-content {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+}
+
+.list-item {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.item-info {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.item-name{
+    font-size: 1.4rem;
+}
+
+.item-cena{
+    line-height: 20px;
+}
+
+.third-section-content {
+
+}
+
+.forth-section {
+    background-image: url('./img/ukrasheniia-novyi-god-rozhdestvo-christmas-wood-new-year--56.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+.forth-section-content {
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.item-name {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-header {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-content {
+    width: 300px;
+}
+
+.foot-block {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.number2 {
+    margin-bottom: 2rem
+}
+
+.button-margin-top {
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 1250px) {
+    .page-wrapper {
+        width: 1250px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .page-wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .page-wrapper {
+        width: 100%;
+    }
+}
