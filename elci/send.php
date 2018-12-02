@@ -19,7 +19,7 @@ $phone1=htmlspecialchars($phone1);
 // адрес почты куда придет письмо
 $address="hecobcemnpo@gmail.com";
 // текст письма 
-$note_text="Тема : $urok \r\nName : $name1 \r\n Phone : $phone1;
+$note_text="Тема : $urok \r\nName : $name1 \r\n Phone : $phone1";
 
 if (isset($name1)  &&  isset ($sab) ) {
 mail($address,$urok,$note_text,"Content-type:text/plain; windows-1251"); 
