@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="button-wrapper">
                 <button class="button" onclick="openbox('box');">Заказать елку</button>
             </div>
@@ -73,48 +73,48 @@
             <div class="section-header">Доставка по Могилёву</div>
             <div class="third-section-content">
                 <div class="item">
-                <div class="item-name">Елка исскуственная 120 см</div>
-                <div class="item-info">
-                    <div class="item-cena">
-                        <div>160 руб.</div>
-                        <div class="close-cena">150 руб.</div>
+                    <div class="item-name">Елка исскуственная 120 см</div>
+                    <div class="item-info">
+                        <div class="item-cena">
+                            <div>160 руб.</div>
+                            <div class="close-cena">150 руб.</div>
+                        </div>
+                        <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                     </div>
-                    <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                 </div>
-            </div>
 
-            <div class="item">
-                <div class="item-name">Елка исскуственная 120 см</div>
-                <div class="item-info">
-                    <div class="item-cena">
-                        <div>160 руб.</div>
-                        <div class="close-cena">150 руб.</div>
+                <div class="item">
+                    <div class="item-name">Елка исскуственная 120 см</div>
+                    <div class="item-info">
+                        <div class="item-cena">
+                            <div>160 руб.</div>
+                            <div class="close-cena">150 руб.</div>
+                        </div>
+                        <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                     </div>
-                    <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                 </div>
-            </div>
 
-            <div class="item">
-                <div class="item-name">Елка исскуственная 120 см</div>
-                <div class="item-info">
-                    <div class="item-cena">
-                        <div>160 руб.</div>
-                        <div class="close-cena">150 руб.</div>
+                <div class="item">
+                    <div class="item-name">Елка исскуственная 120 см</div>
+                    <div class="item-info">
+                        <div class="item-cena">
+                            <div>160 руб.</div>
+                            <div class="close-cena">150 руб.</div>
+                        </div>
+                        <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                     </div>
-                    <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                 </div>
-            </div>
 
-            <div class="item">
-                <div class="item-name">Елка исскуственная 120 см</div>
-                <div class="item-info">
-                    <div class="item-cena">
-                        <div>160 руб.</div>
-                        <div class="close-cena">150 руб.</div>
+                <div class="item">
+                    <div class="item-name">Елка исскуственная 120 см</div>
+                    <div class="item-info">
+                        <div class="item-cena">
+                            <div>160 руб.</div>
+                            <div class="close-cena">150 руб.</div>
+                        </div>
+                        <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                     </div>
-                    <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                 </div>
-            </div>
 
             </div>
         </section>
@@ -132,27 +132,63 @@
                         Или закажите бесплатный звонок.
                         Наш специалист готов ответить на все ваши
                         вопросы в течение 15 минут
+                        <a href="second.html">aAAAAAAAA</a>
                     </div>
                     <button onclick="openbox('box');" class="button button-s button-margin-top">Заказать звонок</button>
+                    <form action="send.php" method="post">
+                        <input type="text" name="fio" placeholder="Укажите ФИО" required>
+                        <input type="text" name="email" placeholder="Укажите e-mail" required>
+                        <input type="submit" value="Отправить">
+                    </form>
                 </div>
             </section>
         </div>
     </section>
 
-    <div id="box" onclick="openbox('box');" style="display: none;"></div>
+    <div id="box" style="display: none;">
+        <div class="box-wrapper"></div>
+    </div>
 </body>
 
 <script type="text/javascript">
-
     function openbox(id) {
         display = document.getElementById(id).style.display;
 
         if (display == 'none') {
-           document.getElementById(id).style.display='block';
+            document.getElementById(id).style.display = 'block';
         } else {
-           document.getElementById(id).style.display='none';
+            document.getElementById(id).style.display = 'none';
         }
     }
-    </script>
+
+    var box = document.querySelector('#box');
+
+    box.onclick = function (event) {
+        if (document.querySelector('#box').style.display === 'none') {
+            event.target.style.display = 'block';
+        } else {
+            event.target.style.display = 'none';
+        }
+    };
+</script>
+
+<?php
+} else {
+ //показываем форму
+ $fio = $_POST['fio'];
+ $email = $_POST['email'];
+ $fio = htmlspecialchars($fio);
+ $email = htmlspecialchars($email);
+ $fio = urldecode($fio);
+ $email = urldecode($email);
+ $fio = trim($fio);
+ $email = trim($email);
+ if (mail("example@mail.ru", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: example2@mail.ru \r\n")){ 
+ echo "Сообщение успешно отправлено"; 
+ } else { 
+ echo "При отправке сообщения возникли ошибки";
+ }
+}
+?>
 
 </html>

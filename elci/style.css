@@ -107,13 +107,6 @@ body {
     padding: 8px 15px;
 }
 
-/* .button:hover {
-    background: transparent;
-    border-color: #6DB819 !important;
-    color: #FFFFFF;
-    cursor: pointer;
-} */
-
 .second-section {
     min-height: 600px;
     height: 85vh;
@@ -162,8 +155,6 @@ body {
     line-height: 20px;
 }
 
-.third-section-content {}
-
 .forth-section {
     background-image: url('./img/ukrasheniia-novyi-god-rozhdestvo-christmas-wood-new-year--56.jpg');
     background-repeat: no-repeat;
@@ -191,8 +182,6 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
-
 
 .foot-block {
     min-height: 600px;
@@ -239,9 +228,13 @@ body {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .page-wrapper {
-        width: 90%;
+@media screen and (max-width: 960px) {
+    html {
+        font-size: 13.5px;
+    }
+
+    .image img {
+        max-width: 270px;
     }
 }
 
@@ -277,6 +270,9 @@ body {
 
     .up-header {
         justify-content: center;
+    }
+    .list {
+        width: 100%;
     }
 }
 
@@ -480,6 +476,9 @@ body {
     justify-content: space-between;
 }
 
-.list {
-    width: 500px;
+.box-wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: #6DB819;
+    z-index: 200;
 }
