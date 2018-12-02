@@ -14,7 +14,7 @@ body {
 
 .bold {
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 1rem;
 }
 
 .header-1 {
@@ -78,6 +78,7 @@ body {
     justify-content: space-between;
     color: white;
     font-size: 1.5rem;
+    padding: 0 2rem;
 }
 
 .logo {
@@ -114,6 +115,7 @@ body {
 } */
 
 .second-section {
+    min-height: 600px;
     height: 85vh;
     display: flex;
     justify-content: center;
@@ -121,6 +123,7 @@ body {
 }
 
 .third-section {
+    min-height: 600px;
     height: 85vh;
     display: flex;
     justify-content: center;
@@ -173,6 +176,8 @@ body {
 .forth-section-content {
     font-size: 2.5rem;
     font-weight: 100;
+    
+    padding: 0 4rem;
 }
 
 .item-name {
@@ -187,11 +192,10 @@ body {
     margin-bottom: 2rem;
 }
 
-/* .footer-content {
-    width: 300px;
-} */
+
 
 .foot-block {
+    min-height: 600px;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -216,9 +220,22 @@ body {
     text-decoration: line-through;
 }
 
-@media screen and (min-width: 1250px) {
+#box {
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1250px) {
     .page-wrapper {
         width: 1250px;
+    }
+    .image img{
+        width: 50vh;
     }
 }
 
@@ -234,13 +251,12 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .page-wrapper {
-        width: 100%;
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 13px;
     }
-
     .image {
-        width: 260px;
+        display: none;
     }
 
     .item-cena {
@@ -253,6 +269,17 @@ body {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    .up-header {
+        justify-content: center;
+    }
+}
+
 
 @media screen and (max-width: 500px) {
 
@@ -284,20 +311,12 @@ body {
         justify-content: space-evenly;
     }
 
-    .up-header {
-        justify-content: center;
-    }
-
     .header-1 {
         font-size: 3rem;
     }
 
     .header-2 {
         font-size: 2.5rem;
-    }
-
-    .logo {
-        display: none;
     }
 
     /* SECOND PAGE */
@@ -380,4 +399,87 @@ body {
     .list-item {
         margin-top: 1.2rem;
     }
+}
+.number {
+    font-size: 2rem;
+}
+
+.page-wrapper {
+    padding: 0;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page-image {
+    height: 100vh;
+}
+
+.button-wrapper {
+    margin: 0;
+}
+
+.main-info {
+    justify-content: space-evenly;
+}
+
+.header-1 {
+    font-size: 3rem;
+}
+
+.header-2 {
+    font-size: 2.5rem;
+}
+
+
+.page-wrapper-2 {
+    height: 70vh;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    margin: 0;
+}
+
+
+.section-content {
+    margin: 0;
+}
+
+.third-section-content {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.button-s {
+    font-size: 1.5rem;
+}
+
+.item-info {
+    padding: 0;
+    margin: 0;
+}
+
+.item-name {
+    margin: 0;
+}
+
+.item-cena {
+    font-size: 1.5rem;
+}
+
+.item {
+    min-height: 100px;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list {
+    width: 500px;
 }

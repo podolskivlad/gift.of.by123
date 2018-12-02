@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="button-wrapper">
-                    <button class="button">Заказать елку</button>
+                    <button class="button" onclick="openbox('box');">Заказать елку</button>
                 </div>
             </section>
         </div>
@@ -63,7 +63,7 @@
             </div>
             
             <div class="button-wrapper">
-                <button class="button">Заказать елку</button>
+                <button class="button" onclick="openbox('box');">Заказать елку</button>
             </div>
         </section>
     </section>
@@ -79,7 +79,7 @@
                         <div>160 руб.</div>
                         <div class="close-cena">150 руб.</div>
                     </div>
-                    <button class="button button-s">Заказать елку</button>
+                    <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                 </div>
             </div>
 
@@ -90,7 +90,7 @@
                         <div>160 руб.</div>
                         <div class="close-cena">150 руб.</div>
                     </div>
-                    <button class="button button-s">Заказать елку</button>
+                    <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                 </div>
             </div>
 
@@ -101,7 +101,7 @@
                         <div>160 руб.</div>
                         <div class="close-cena">150 руб.</div>
                     </div>
-                    <button class="button button-s">Заказать елку</button>
+                    <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                 </div>
             </div>
 
@@ -112,7 +112,7 @@
                         <div>160 руб.</div>
                         <div class="close-cena">150 руб.</div>
                     </div>
-                    <button class="button button-s">Заказать елку</button>
+                    <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
                 </div>
             </div>
 
@@ -133,11 +133,26 @@
                         Наш специалист готов ответить на все ваши
                         вопросы в течение 15 минут
                     </div>
-                    <button class="button button-s button-margin-top">Заказать звонок</button>
+                    <button onclick="openbox('box');" class="button button-s button-margin-top">Заказать звонок</button>
                 </div>
             </section>
         </div>
     </section>
+
+    <div id="box" onclick="openbox('box');" style="display: none;"></div>
 </body>
+
+<script type="text/javascript">
+
+    function openbox(id) {
+        display = document.getElementById(id).style.display;
+
+        if (display == 'none') {
+           document.getElementById(id).style.display='block';
+        } else {
+           document.getElementById(id).style.display='none';
+        }
+    }
+    </script>
 
 </html>
