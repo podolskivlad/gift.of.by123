@@ -439,6 +439,9 @@ body {
     margin: 0;
 }
 
+.image img {
+    width: 50vh;
+}
 
 .section-content {
     margin: 0;
