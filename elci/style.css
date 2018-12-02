@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=cyrillic');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,11 +22,9 @@ body {
     color: white;
     text-align: center;
     line-height: 5rem;
-    margin-top: 5rem;
 }
 
 .header-2 {
-    margin-top: 3rem;
     font-size: 3rem;
     color: white;
     text-align: center;
@@ -34,11 +32,17 @@ body {
 }
 
 .header-3 {
-    margin-top: 2rem;
     font-size: 2rem;
     color: white;
     text-align: center;
     line-height: 3rem;
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 60%;
 }
 
 .button-wrapper {
@@ -74,7 +78,6 @@ body {
     justify-content: space-between;
     color: white;
     font-size: 1.5rem;
-    margin-top: 2rem;
 }
 
 .logo {
@@ -103,12 +106,12 @@ body {
     padding: 8px 15px;
 }
 
-.button:hover {
+/* .button:hover {
     background: transparent;
     border-color: #6DB819 !important;
     color: #FFFFFF;
     cursor: pointer;
-}
+} */
 
 .second-section {
     height: 85vh;
@@ -148,17 +151,15 @@ body {
     margin-top: 30px;
 }
 
-.item-name{
+.item-name {
     font-size: 1.4rem;
 }
 
-.item-cena{
+.item-cena {
     line-height: 20px;
 }
 
-.third-section-content {
-
-}
+.third-section-content {}
 
 .forth-section {
     background-image: url('./img/ukrasheniia-novyi-god-rozhdestvo-christmas-wood-new-year--56.jpg');
@@ -170,11 +171,12 @@ body {
 }
 
 .forth-section-content {
-    font-size: 23px;
+    font-size: 2.5rem;
     font-weight: 100;
 }
 
 .item-name {
+    font-size: 2rem;
     text-align: center;
     margin-top: 50px;
 }
@@ -185,9 +187,9 @@ body {
     margin-bottom: 2rem;
 }
 
-.footer-content {
+/* .footer-content {
     width: 300px;
-}
+} */
 
 .foot-block {
     height: 70vh;
@@ -203,6 +205,17 @@ body {
     margin-top: 2rem;
 }
 
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0em;
+}
+
+.close-cena {
+    text-decoration: line-through;
+}
+
 @media screen and (min-width: 1250px) {
     .page-wrapper {
         width: 1250px;
@@ -215,14 +228,156 @@ body {
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .page-wrapper {
+        width: 1000px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .page-wrapper {
         width: 100%;
+    }
+
+    .image {
+        width: 260px;
+    }
+
+    .item-cena {
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 320px) {
     .page-wrapper {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    /* FIRST PAGE */
+    .number {
+        font-size: 2rem;
+    }
+
+    .page-wrapper {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .page-image {
+        height: 100vh;
+    }
+
+    .button-wrapper {
+        margin: 0;
+    }
+
+    .main-info {
+        justify-content: space-evenly;
+    }
+
+    .up-header {
+        justify-content: center;
+    }
+
+    .header-1 {
+        font-size: 3rem;
+    }
+
+    .header-2 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    /* SECOND PAGE */
+
+    .page-wrapper-2 {
+        height: 70vh;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-section {
+        height: 70vh;
+    }
+
+    .section-header {
+        margin: 0;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .section-content {
+        margin: 0;
+    }
+
+    /* Third Section*/
+
+    .third-section-content {
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .button-s {
+        font-size: 1.5rem;
+    }
+
+    .item-info {
+        padding: 0;
+        margin: 0;
+    }
+
+    .item-name {
+        margin: 0;
+    }
+
+    .item-cena {
+        font-size: 1.5rem;
+    }
+
+    .item {
+        height: 12vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .forth-section-content {
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    html {
+        font-size: 9px;
+    }
+
+    .forth-section-content{
+        padding: 0 1rem;
+        font-size: 2.3rem;
+    }
+
+    .button {
+        padding: 8px 20px;
+    }
+
+    .list-item {
+        margin-top: 1.2rem;
     }
 }
