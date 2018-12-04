@@ -1,206 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Исскуственные елки</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="material-input.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Исскуственные елки</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="material-input.css">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+          try {
+            w.yaCounter51410806 = new Ya.Metrika2({
+              id: 51410806,
+              clickmap: true,
+              trackLinks: true,
+              accurateTrackBounce: true,
+              webvisor: true
+            });
+          } catch (e) {}
+        });
 
-<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
-  <section class="page-image">
-    <div class="image-filter-80 up-block">
+        var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function() {
+            n.parentNode.insertBefore(s, n);
+          };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+          f();
+        }
+      })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/51410806"
+          style="position:absolute; left:-9999px;"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <section class="page-image">
+      <div class="image-filter-80 up-block">
+        <section class="page-wrapper">
+          <header class="up-header">
+            <div class="logo">
+              <i class="fas fa-tree"></i>
+              <div class="bold">Исскуственные</div>
+              <div>елки</div>
+            </div>
+            <div class="number">
+              <div>+375 44 542 94 98</div>
+              <div>+375 29 133 39 18</div>
+            </div>
+          </header>
+          <div class="main-info">
+            <div class="header-1">Исскуственные ёлки в Могилеве</div>
+            <div class="header-2">Доставим ёлку бесплатно!</div>
+            <div class="header-3">Акция до 5 декабря!</div>
+            <div class="header-3">
+              <div>
+                120см — 50 руб. <span class="close-cena">вместо 60 руб.</span>
+              </div>
+              <div>
+                150см — 80 руб. <span class="close-cena">вместо 90 руб.</span>
+              </div>
+              <div>
+                180см — 110 руб. <span class="close-cena">вместо 120 руб.</span>
+              </div>
+              <div>
+                210см — 150 руб. <span class="close-cena">вместо 160 руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="button-wrapper">
+            <button class="button" onclick="openbox('box');">
+              Заказать елку
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="second-section">
       <section class="page-wrapper">
-        <header class="up-header">
-          <div class="logo">
-            <i class="fas fa-tree"></i>
-            <div class="bold">Исскуственные</div>
-            <div>елки</div>
+        <div class="section-header">Преимущества нашего продукта</div>
+        <div class="section-content">
+          <div class="image">
+            <img src="./img/oHxtBYGlQEk.jpg" alt="" srcset="" />
           </div>
-          <div class="number">
-            <div>+375 44 542 94 98</div>
-            <div>+375 29 133 39 18</div>
-          </div>
-        </header>
-        <div class="main-info">
-          <div class="header-1">Исскуственные ёлки в Могилеве</div>
-          <div class="header-2">Доставим ёлку бесплатно!</div>
-          <div class="header-3">Акция до 5 декабря!</div>
-          <div class="header-3">
-            <div>150см — 50 руб. <span class="close-cena">вместо 60 руб.</span></div>
-            <div>150см — 80 руб. <span class="close-cena">вместо 90 руб.</span></div>
-            <div>180см — 110 руб. <span class="close-cena">вместо 120 руб.</span></div>
-            <div>180см — 150 руб. <span class="close-cena">вместо 160 руб.</span></div>
+          <div>
+            <div class="list">
+              <div class="list-item">✅ - Самая популярная модель.</div>
+              <div class="list-item">✅ - Сборная конструкция.</div>
+              <div class="list-item">✅ - Хвоя густая</div>
+              <div class="list-item">✅ - В комплекте идёт набор шишек.</div>
+              <div class="list-item">
+                ✅ - Цвет тёмнозелёный с белым напылением
+              </div>
+              <div class="list-item">
+                ✅ - Сделана из экологически чистых материалов
+              </div>
+              <div class="list-item">✅ - Без запаха</div>
+            </div>
           </div>
         </div>
+
         <div class="button-wrapper">
-          <button class="button" onclick="openbox('box');">Заказать елку</button>
+          <button class="button" onclick="openbox('box');">
+            Заказать елку
+          </button>
         </div>
       </section>
-    </div>
-  </section>
-
-  <section class="second-section">
-    <section class="page-wrapper">
-      <div class="section-header">Преимущества нашего продукта</div>
-      <div class="section-content">
-        <div class="image">
-          <img src="./img/oHxtBYGlQEk.jpg" alt="" srcset="">
-        </div>
-        <div>
-          <div class="list">
-            <div class="list-item">✅ - Самая популярная модель. </div>
-            <div class="list-item">✅ - Сборная конструкция. </div>
-            <div class="list-item">✅ - Хвоя густая</div>
-            <div class="list-item">✅ - В комплекте идёт набор шишек. </div>
-            <div class="list-item">✅ - Цвет тёмнозелёный с белым напылением</div>
-            <div class="list-item">✅ - Сделана из экологически чистых материалов</div>
-            <div class="list-item">✅ - Без запаха</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="button-wrapper">
-        <button class="button" onclick="openbox('box');">Заказать елку</button>
-      </div>
     </section>
-  </section>
 
-  <section class="third-section">
-    <section class="page-wrapper">
-      <div class="section-header">Доставка по Могилёву</div>
-      <div class="third-section-content">
-        <div class="item">
-          <div class="item-name">Елка исскуственная 120 см</div>
-          <div class="item-info">
-            <div class="item-cena">
-              <div>50 руб.</div>
-              <div class="close-cena">60 руб.</div>
-            </div>
-            <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-name">Елка исскуственная 150 см</div>
-          <div class="item-info">
-            <div class="item-cena">
-              <div>80 руб.</div>
-              <div class="close-cena">90 руб.</div>
-            </div>
-            <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-name">Елка исскуственная 180 см</div>
-          <div class="item-info">
-            <div class="item-cena">
-              <div>110 руб.</div>
-              <div class="close-cena">120 руб.</div>
-            </div>
-            <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item-name">Елка исскуственная 210 см</div>
-          <div class="item-info">
-            <div class="item-cena">
-              <div>150 руб.</div>
-              <div class="close-cena">160 руб.</div>
-            </div>
-            <button class="button button-s" onclick="openbox('box');">Заказать елку</button>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </section>
-
-  <section class="forth-section">
-    <div class="image-filter-80 foot-block">
+    <section class="third-section">
       <section class="page-wrapper">
-        <div class="section-header">Остались вопросы?</div>
-        <div class="forth-section-content">
-          <div class="footer-header">Позвоните по телефону:</div>
-          <div class="number1">+375 44 542 94 98</div>
-          <div class="number2">+375 29 133 39 18</div>
-          <div class="footer-content">
-            Или закажите бесплатный звонок.
-            Наш специалист готов ответить на все ваши
-            вопросы в течение 15 минут
+        <div class="section-header">Доставка по Могилёву</div>
+        <div class="third-section-content">
+          <div class="item">
+            <div class="item-name">Елка исскуственная 120 см</div>
+            <div class="item-info">
+              <div class="item-cena">
+                <div>50 руб.</div>
+                <div class="close-cena">60 руб.</div>
+              </div>
+              <button class="button button-s" onclick="openbox('box');">
+                Заказать елку
+              </button>
+            </div>
           </div>
-          <button onclick="openbox('box');" class="button button-s button-margin-top">Заказать звонок</button>
+
+          <div class="item">
+            <div class="item-name">Елка исскуственная 150 см</div>
+            <div class="item-info">
+              <div class="item-cena">
+                <div>80 руб.</div>
+                <div class="close-cena">90 руб.</div>
+              </div>
+              <button class="button button-s" onclick="openbox('box');">
+                Заказать елку
+              </button>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-name">Елка исскуственная 180 см</div>
+            <div class="item-info">
+              <div class="item-cena">
+                <div>110 руб.</div>
+                <div class="close-cena">120 руб.</div>
+              </div>
+              <button class="button button-s" onclick="openbox('box');">
+                Заказать елку
+              </button>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="item-name">Елка исскуственная 210 см</div>
+            <div class="item-info">
+              <div class="item-cena">
+                <div>150 руб.</div>
+                <div class="close-cena">160 руб.</div>
+              </div>
+              <button class="button button-s" onclick="openbox('box');">
+                Заказать елку
+              </button>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
-  </section>
+    </section>
 
-  <div id="box" style="display: none;">
-    <div class="box-wrapper">
-      <form action="send.php" method="post" target="_blank" name="f1">
-        <div class="group">
-          <div class="header-3" style="
+    <section class="forth-section">
+      <div class="image-filter-80 foot-block">
+        <section class="page-wrapper">
+          <div class="section-header">Остались вопросы?</div>
+          <div class="forth-section-content">
+            <div class="footer-header">Позвоните по телефону:</div>
+            <div class="number1">+375 44 542 94 98</div>
+            <div class="number2">+375 29 133 39 18</div>
+            <div class="footer-content">
+              Или закажите бесплатный звонок. Наш специалист готов ответить на
+              все ваши вопросы в течение 15 минут
+            </div>
+            <button
+              onclick="openbox('box');"
+              class="button button-s button-margin-top"
+            >
+              Заказать звонок
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <div id="box" style="display: none;">
+      <div class="box-wrapper">
+        <form action="send.php" method="post" target="_blank" name="f1">
+          <div class="group">
+            <div
+              class="header-3"
+              style="
           color: black;
           text-align: left; 
           font-weight: 400;
           font-size: 2.3rem;
-          ">
-            Оставить заказ
+          "
+            >
+              Оставить заказ
+            </div>
           </div>
-        </div>
 
-        <div class="group">
-          <input type="text" required name="name1">
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Ваше имя</label>
-        </div>
+          <div class="group">
+            <input type="text" required name="name1" />
+            <span class="highlight"></span> <span class="bar"></span>
+            <label>Ваше имя</label>
+          </div>
 
-        <div class="group">
-          <input type="text" required name="phone1">
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Номер телефона</label>
-        </div>
+          <div class="group">
+            <input type="text" required name="phone1" />
+            <span class="highlight"></span> <span class="bar"></span>
+            <label>Номер телефона</label>
+          </div>
 
-        <div class="group group-button">
-          <input type="submit" name="sab" class="button button-s" value="Заказать елку" />
-        </div>
-      </form>
+          <div class="group group-button">
+            <input
+              type="submit"
+              name="sab"
+              class="button button-s"
+              value="Заказать елку"
+            />
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+  </body>
 
+  <script type="text/javascript">
+    function openbox(id) {
+      display = document.getElementById(id).style.display;
 
-</body>
-
-<script type="text/javascript">
-  function openbox(id) {
-    display = document.getElementById(id).style.display;
-
-    if (display == 'none') {
-      document.getElementById(id).style.display = 'block';
-    } else {
-      document.getElementById(id).style.display = 'none';
+      if (display == "none") {
+        document.getElementById(id).style.display = "block";
+      } else {
+        document.getElementById(id).style.display = "none";
+      }
     }
-  }
 
-  var box = document.querySelector('#box');
+    var box = document.querySelector("#box");
 
-  box.onclick = function (event) {
-    if (document.querySelector('#box').style.display === 'none' &&
-      event.target === document.querySelector('#box')) {
-      document.querySelector('#box').style.display = 'block';
-    } else if (event.target === document.querySelector('#box')) {
-      document.querySelector('#box').style.display = 'none';
-    } else {}
-  };
-</script>
-
+    box.onclick = function(event) {
+      if (
+        document.querySelector("#box").style.display === "none" &&
+        event.target === document.querySelector("#box")
+      ) {
+        document.querySelector("#box").style.display = "block";
+      } else if (event.target === document.querySelector("#box")) {
+        document.querySelector("#box").style.display = "none";
+      } else {
+      }
+    };
+  </script>
 </html>
